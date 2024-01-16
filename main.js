@@ -51,6 +51,7 @@ function createGrid() {
             console.log(boxspan.innerText)
             box.classList.toggle("active")
         })
+
     }
 
 }
