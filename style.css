@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --col-number: 10
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    padding-block: 3em;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+
+}
+
+
+.box {
+    aspect-ratio: 1;
+    width: calc(100% / var(--col-number));
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    background-color: cornflowerblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2em;
+    padding-block: 3em;
+}
+
+select {
+    font-size: 22px;
+    padding-inline: 2em;
+    padding-block: 0.5em;
+    text-align: center;
+}
+
+.select label {
+    font-size: 18px;
+}
+
+button {
+    padding-inline: 2em;
+    padding-block: 0.5em;
+    font-size: 22px;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
